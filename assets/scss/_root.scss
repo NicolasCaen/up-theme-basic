@@ -1,0 +1,23 @@
+/*
+Les includes seront inséré automatiquement par le build process
+le . correspond au dossier a scanner pour les includes 
+.si = scanner les fichiers se terminant par .scss et 
+*/
+
+// -- includes -- start . use
+@use "custom";
+@use "index";
+@use "mixins";
+@use "layout";
+@use "forms";
+// -- includes -- end
+
+// -- includes -- start classes use
+// -- includes -- end
+
+// -- includes -- start sections use
+
+// -- includes -- end
+
+// -- includes -- start blocks use
+// -- includes -- end

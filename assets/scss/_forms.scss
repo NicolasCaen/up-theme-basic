@@ -1,0 +1,63 @@
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="number"],
+input[type="tel"],
+input[type="date"],
+input[type="time"],
+input[type="datetime-local"],
+input[type="month"],
+input[type="week"],
+input[type="color"],
+select,
+textarea {
+    color: var(--wp--custom--form--input--color--text);
+    background-color: var(--wp--custom--form--input--color--background);
+    border: var(--wp--custom--form--input--border--width) var(--wp--custom--form--input--border--style) var(--wp--custom--form--input--color--border);
+    border-radius: var(--wp--custom--form--input--border--radius);
+    padding: var(--wp--custom--form--input--spacing--padding-y) var(--wp--custom--form--input--spacing--padding-x);
+    font-size: var(--wp--custom--form--input--typography--font-size);
+    line-height: var(--wp--custom--form--input--typography--line-height);
+    transition: var(--wp--custom--form--input--transition);
+    box-sizing: border-box;
+    width: auto;
+    display: block;
+    max-width: 100%;
+
+    &::placeholder {
+        color: var(--wp--custom--form--input--color--placeholder);
+    }
+
+    &:focus {
+        outline: none;
+        border-color: var(--wp--custom--form--input--color--focus-border);
+    }
+}
+label, span{
+    display:block;
+}
+
+textarea {
+    min-height: var(--wp--custom--form--textarea--spacing--min-height);
+}
+
+input[type="submit"] {
+    color: var(--wp--custom--form--submit--color--text);
+    background-color: var(--wp--custom--form--submit--color--background);
+    border: var(--wp--custom--form--submit--border--width) var(--wp--custom--form--submit--border--style) var(--wp--custom--form--submit--color--border);
+    border-radius: var(--wp--custom--form--submit--border--radius);
+    padding: var(--wp--custom--form--submit--spacing--padding-y) var(--wp--custom--form--submit--spacing--padding-x);
+    font-size: var(--wp--custom--form--submit--typography--font-size);
+    font-weight: var(--wp--custom--form--submit--typography--font-weight);
+    text-transform: var(--wp--custom--form--submit--typography--text-transform);
+    transition: var(--wp--custom--form--submit--transition);
+    box-sizing: border-box;
+    cursor: pointer;
+    display: inline-block;
+
+    &:hover {
+        background-color: var(--wp--custom--form--submit--color--hover-background);
+    }
+}

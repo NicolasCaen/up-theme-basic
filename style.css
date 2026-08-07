@@ -1,0 +1,121 @@
+@charset "UTF-8";
+/*
+Theme Name: Up Thème Basic
+Author: GEHIN Nicolas
+Description: Thème ng1@basic
+Version: 0.1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: ng1-base
+*/
+/*
+Les includes seront inséré automatiquement par le build process
+le . correspond au dossier a scanner pour les includes 
+.si = scanner les fichiers se terminant par .scss et 
+*/
+@media (max-width: 767px) {
+  .align-full-mobile {
+    margin-right: calc(var(--wp--style--root--padding-right) * -1);
+    margin-left: calc(var(--wp--style--root--padding-left) * -1);
+  }
+  main > .alignwide {
+    margin-right: calc(var(--wp--style--root--padding-right) * -1) !important;
+    margin-left: calc(var(--wp--style--root--padding-left) * -1) !important;
+  }
+  .with-root-padding {
+    padding-left: var(--wp--style--root--padding-left);
+    padding-right: var(--wp--style--root--padding-right);
+  }
+}
+input[type=text],
+input[type=email],
+input[type=url],
+input[type=password],
+input[type=search],
+input[type=number],
+input[type=tel],
+input[type=date],
+input[type=time],
+input[type=datetime-local],
+input[type=month],
+input[type=week],
+input[type=color],
+select,
+textarea {
+  color: var(--wp--custom--form--input--color--text);
+  background-color: var(--wp--custom--form--input--color--background);
+  border: var(--wp--custom--form--input--border--width) var(--wp--custom--form--input--border--style) var(--wp--custom--form--input--color--border);
+  border-radius: var(--wp--custom--form--input--border--radius);
+  padding: var(--wp--custom--form--input--spacing--padding-y) var(--wp--custom--form--input--spacing--padding-x);
+  font-size: var(--wp--custom--form--input--typography--font-size);
+  line-height: var(--wp--custom--form--input--typography--line-height);
+  transition: var(--wp--custom--form--input--transition);
+  box-sizing: border-box;
+  width: auto;
+  display: block;
+  max-width: 100%;
+}
+input[type=text]::-moz-placeholder, input[type=email]::-moz-placeholder, input[type=url]::-moz-placeholder, input[type=password]::-moz-placeholder, input[type=search]::-moz-placeholder, input[type=number]::-moz-placeholder, input[type=tel]::-moz-placeholder, input[type=date]::-moz-placeholder, input[type=time]::-moz-placeholder, input[type=datetime-local]::-moz-placeholder, input[type=month]::-moz-placeholder, input[type=week]::-moz-placeholder, input[type=color]::-moz-placeholder, select::-moz-placeholder, textarea::-moz-placeholder {
+  color: var(--wp--custom--form--input--color--placeholder);
+}
+input[type=text]::placeholder,
+input[type=email]::placeholder,
+input[type=url]::placeholder,
+input[type=password]::placeholder,
+input[type=search]::placeholder,
+input[type=number]::placeholder,
+input[type=tel]::placeholder,
+input[type=date]::placeholder,
+input[type=time]::placeholder,
+input[type=datetime-local]::placeholder,
+input[type=month]::placeholder,
+input[type=week]::placeholder,
+input[type=color]::placeholder,
+select::placeholder,
+textarea::placeholder {
+  color: var(--wp--custom--form--input--color--placeholder);
+}
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=url]:focus,
+input[type=password]:focus,
+input[type=search]:focus,
+input[type=number]:focus,
+input[type=tel]:focus,
+input[type=date]:focus,
+input[type=time]:focus,
+input[type=datetime-local]:focus,
+input[type=month]:focus,
+input[type=week]:focus,
+input[type=color]:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: var(--wp--custom--form--input--color--focus-border);
+}
+
+label, span {
+  display: block;
+}
+
+textarea {
+  min-height: var(--wp--custom--form--textarea--spacing--min-height);
+}
+
+input[type=submit] {
+  color: var(--wp--custom--form--submit--color--text);
+  background-color: var(--wp--custom--form--submit--color--background);
+  border: var(--wp--custom--form--submit--border--width) var(--wp--custom--form--submit--border--style) var(--wp--custom--form--submit--color--border);
+  border-radius: var(--wp--custom--form--submit--border--radius);
+  padding: var(--wp--custom--form--submit--spacing--padding-y) var(--wp--custom--form--submit--spacing--padding-x);
+  font-size: var(--wp--custom--form--submit--typography--font-size);
+  font-weight: var(--wp--custom--form--submit--typography--font-weight);
+  text-transform: var(--wp--custom--form--submit--typography--text-transform);
+  transition: var(--wp--custom--form--submit--transition);
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inline-block;
+}
+input[type=submit]:hover {
+  background-color: var(--wp--custom--form--submit--color--hover-background);
+}/*# sourceMappingURL=style.css.map */
