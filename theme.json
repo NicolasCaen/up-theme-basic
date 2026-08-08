@@ -2,118 +2,85 @@
     "$schema": "https://schemas.wp.org/trunk/theme.json",
     "version": 3,
     "settings": {
-         "useRootPaddingAwareAlignments": true,
+        "useRootPaddingAwareAlignments": true,
         "custom": {
+            "font": {
+                "body": "var:preset|font-family|primary",
+                "title": "var:preset|font-family|secondary"
+            },
+            "color": {
+                "text": "var:preset|color|contrast",
+                "background": "var:preset|color|base"
+            },
             "navigation": {
                 "footer": "Footer Menu"
             },
-            "color": {
-                "text": "var:preset|color|base2",
-                "background": "var:preset|color|base"
+            "heading": {
+                "margin-y": ".3em"
             },
-            "spacing": {
-                "heading": {
-                    "margin-y": ".3em"
-                },
-                "paragraph": {
-                    "margin-y": "1em"
-                },
-                "list-item": {
-                    "margin-y": "1em"
-                },
-                "button": {
-                    "padding-y": ".5rem",
-                    "padding-x": "1rem"
-                }
+            "h1": {
+                "line-height": "1.15"
             },
-            "border": {
-                "button": {
-                    "radius": "0",
-                    "width": "2px",
-                    "style": "solid"
-                }
+            "h2": {
+                "line-height": "1"
             },
-            "typography": {
-                "h1": {
-                    "line-height": "1.15"
-                },
-                "h2": {
-                    "line-height": "1"
-                },
-                "paragraph": {
-                    "line-height": "1.25"
-                },
-                "list-item": {
-                    "line-height": "1.25"
-                },
-                "quote": {
-                    "font-weight": "600",
-                    "line-height": "1.15",
-                    "text-align": "center",
-                    "font-style": "italic"
-                },
-                "button": {
-                    "font-weight": "600"
-                }
+            "paragraph": {
+                "margin-y": "1em",
+                "line-height": "1.25"
             },
-            "transition": {
-                "button": "all .4s"
+            "list-item": {
+                "margin-y": "1em",
+                "line-height": "1.25"
             },
-            "form": {
-                "input": {
-                    "color": {
-                        "text": "inherit",
-                        "background": "inherit",
-                        "border":   "currentColor",
-                        "placeholder": "#999999",
-                        "focus-border": "#C6AA76"
-                    },
-                    "spacing": {
-                        "padding-y": ".5rem",
-                        "padding-x": ".75rem"
-                    },
-                    "border": {
-                        "radius": "0",
-                        "width": "1px",
-                        "style": "solid"
-                    },
-                    "typography": {
-                        "font-size": "1rem",
-                        "line-height": "1.25"
-                    },
-                    "transition": "border-color .2s ease"
-                },
-                "textarea": {
-                    "spacing": {
-                        "min-height": "120px"
-                    }
-                },
-                "submit": {
-                    "color": {
-                        "text": "currentColor",
-                        "background": "var(--wp--preset--color--accent)",
-                        "border": "var(--wp--preset--color--accent)",
-                        "hover-background": "var(--wp--preset--color--accent-2)"
-                    },
-                    "spacing": {
-                        "padding-y": ".5rem",
-                        "padding-x": "1rem"
-                    },
-                    "border": {
-                        "radius": "0",
-                        "width": "2px",
-                        "style": "solid"
-                    },
-                    "typography": {
-                        "font-size": "var(--wp--preset--font-size--s)",
-                        "font-weight": "600",
-                        "text-transform": "none"
-                    },
-                    "transition": "all .4s"
-                }
+            "quote": {
+                "font-weight": "600",
+                "line-height": "1.15",
+                "text-align": "center",
+                "font-style": "italic"
+            },
+            "button": {
+                "padding-y": ".5rem",
+                "padding-x": "1rem",
+                "radius": "0",
+                "width": "2px",
+                "style": "solid",
+                "font-weight": "600",
+                "transition": "all .4s"
+            },
+            "input": {
+                "color-text": "inherit",
+                "color-background": "inherit",
+                "color-border": "currentColor",
+                "color-placeholder": "#999999",
+                "color-focus-border": "#C6AA76",
+                "padding-y": ".5rem",
+                "padding-x": ".75rem",
+                "border-radius": "0",
+                "border-width": "1px",
+                "border-style": "solid",
+                "font-size": "1rem",
+                "line-height": "1.25",
+                "transition": "border-color .2s ease"
+            },
+            "textarea": {
+                "min-height": "120px"
+            },
+            "submit": {
+                "color-text": "currentColor",
+                "color-background": "var:preset|color|accent",
+                "color-border": "var:preset|color|accent",
+                "color-hover-background": "var:preset|color|accent-2",
+                "padding-y": ".5rem",
+                "padding-x": "1rem",
+                "border-radius": "0",
+                "border-width": "2px",
+                "border-style": "solid",
+                "font-size": "var:preset|font-size|s",
+                "font-weight": "600",
+                "text-transform": "none",
+                "transition": "all .4s"
             }
         },
-       
         "appearanceTools": true,
         "shadow": {
             "defaultPresets": false,
@@ -178,94 +145,253 @@
                 }
             ]
         },
-       "color": {
+        "color": {
             "palette": [
                 {
                     "slug": "base",
-                    "name": "Base | Neutral light",
-                    "color": "var:"
-                },
-                {
-                    "slug": "base-2",
-                    "name": "Base 2 | Neutral dark",
-                    "color": "#000000"
-                },
-                {
-                    "slug": "base-3",
-                    "name": "Base 3 | Neutral medium",
-                    "color": "#CFCFCF"
+                    "name": "Base",
+                    "color": "#ffffff"
                 },
                 {
                     "slug": "contrast",
-                    "name": "Contrast | Secondary",
-                    "color": "#DEDC00"
-                },
-                {
-                    "slug": "contrast-2",
-                    "name": "Contrast 2 | Secondary Light",
-                    "color": "#FFFFE0"
-                },
-                {
-                    "slug": "contrast-3",
-                    "name": "Contrast 3 | Secondary Dark",
-                    "color": "#545300"
+                    "name": "Contrast",
+                    "color": "#1e1e1e"
                 },
                 {
                     "slug": "accent",
-                    "name": "Accent | Primary dark",
-                    "color": "#002D53"
-                },
-                {
-                    "slug": "accent-2",
-                    "name": "Accent-2 | Primary medium",
-                    "color": "#EBF6FF"
-                },
-                {
-                    "slug": "accent-3",
-                    "name": "Accent-3 | Primary",
-                    "color": "#002D53"
+                    "name": "Accent",
+                    "color": "#dddddd"
                 },
                 {
                     "slug": "error",
                     "name": "Error",
-                    "color": "#EB5757"
+                    "color": "#EF4444"
                 },
                 {
-                    "slug": "transparent",
-                    "name": "transparent",
-                    "color": "transparent"
+                    "slug": "success",
+                    "name": "Success",
+                    "color": "#10B981"
+                },
+                {
+                    "slug": "warning",
+                    "name": "Warning",
+                    "color": "#F59E0B"
                 }
             ],
-            "gradients": [
-                {
-                    "slug": "gradient-1",
-                    "name": "Gradient Base2 Contrast",
-                    "gradient": "linear-gradient(90deg, var(--wp--preset--color--base-2) 0%, var(--wp--preset--color--base-2) 50%, var(--wp--preset--color--contrast) 50%, var(--wp--preset--color--contrast) 100%)"
-                },
-                {    
-                    "slug": "gradient-2",
-                    "name": "Gradient Base Contrast",
-                    "gradient": "linear-gradient(90deg, var(--wp--preset--color--base) 0%, var(--wp--preset--color--base) 50%, var(--wp--preset--color--contrast) 50%, var(--wp--preset--color--contrast) 100%)"
-                },
-                {
-                    "slug": "gradient-3",
-                    "name": "Gradient 3",
-                    "gradient": "linear-gradient(180deg, #000 0%, #001B32 100%)"
-                },
-                {
-                    "slug": "gradient-4",
-                    "name": "Gradient 4",
-                    "gradient": "linear-gradient(90deg, #001B32 27.4%, rgba(0, 27, 50, 0.17) 100%)"
-                },
-                {
-                    "slug": "gradient-5",
-                    "name": "Gradient 5",
-                    "gradient": "linear-gradient(180deg, rgba(0, 18, 33, 0.30) 0%, rgba(0, 18, 33, 0.80) 69.71%);"
-                }
-            ],
+            "gradients": [],
             "defaultDuotone": false,
             "defaultGradients": false,
-            "defaultPalette": false
+            "defaultPalette": false,
+            "duotone": [
+                {
+                    "slug": "black-and-white",
+                    "name": "Noir et blanc",
+                    "colors": [
+                        "#000000",
+                        "#ffffff"
+                    ]
+                },
+                {
+                    "slug": "purple-yellow",
+                    "name": "Violet et jaune",
+                    "colors": [
+                        "#8c00b7",
+                        "#fcff41"
+                    ]
+                },
+                {
+                    "slug": "base-and-white",
+                    "name": "Base and white",
+                    "colors": [
+                        "#ffffff",
+                        "#ffffff"
+                    ]
+                },
+                {
+                    "slug": "white-and-base",
+                    "name": "white and Base",
+                    "colors": [
+                        "#ffffff",
+                        "#ffffff"
+                    ]
+                },
+                {
+                    "slug": "base-and-black",
+                    "name": "Base and black",
+                    "colors": [
+                        "#ffffff",
+                        "#000000"
+                    ]
+                },
+                {
+                    "slug": "black-and-base",
+                    "name": "black and Base",
+                    "colors": [
+                        "#000000",
+                        "#ffffff"
+                    ]
+                },
+                {
+                    "slug": "contrast-and-white",
+                    "name": "Contrast and white",
+                    "colors": [
+                        "#1e1e1e",
+                        "#ffffff"
+                    ]
+                },
+                {
+                    "slug": "white-and-contrast",
+                    "name": "white and Contrast",
+                    "colors": [
+                        "#ffffff",
+                        "#1e1e1e"
+                    ]
+                },
+                {
+                    "slug": "contrast-and-black",
+                    "name": "Contrast and black",
+                    "colors": [
+                        "#1e1e1e",
+                        "#000000"
+                    ]
+                },
+                {
+                    "slug": "black-and-contrast",
+                    "name": "black and Contrast",
+                    "colors": [
+                        "#000000",
+                        "#1e1e1e"
+                    ]
+                },
+                {
+                    "slug": "accent-and-white",
+                    "name": "Accent and white",
+                    "colors": [
+                        "#dddddd",
+                        "#ffffff"
+                    ]
+                },
+                {
+                    "slug": "white-and-accent",
+                    "name": "white and Accent",
+                    "colors": [
+                        "#ffffff",
+                        "#dddddd"
+                    ]
+                },
+                {
+                    "slug": "accent-and-black",
+                    "name": "Accent and black",
+                    "colors": [
+                        "#dddddd",
+                        "#000000"
+                    ]
+                },
+                {
+                    "slug": "black-and-accent",
+                    "name": "black and Accent",
+                    "colors": [
+                        "#000000",
+                        "#dddddd"
+                    ]
+                },
+                {
+                    "slug": "error-and-white",
+                    "name": "Error and white",
+                    "colors": [
+                        "#EF4444",
+                        "#ffffff"
+                    ]
+                },
+                {
+                    "slug": "white-and-error",
+                    "name": "white and Error",
+                    "colors": [
+                        "#ffffff",
+                        "#EF4444"
+                    ]
+                },
+                {
+                    "slug": "error-and-black",
+                    "name": "Error and black",
+                    "colors": [
+                        "#EF4444",
+                        "#000000"
+                    ]
+                },
+                {
+                    "slug": "black-and-error",
+                    "name": "black and Error",
+                    "colors": [
+                        "#000000",
+                        "#EF4444"
+                    ]
+                },
+                {
+                    "slug": "success-and-white",
+                    "name": "Success and white",
+                    "colors": [
+                        "#10B981",
+                        "#ffffff"
+                    ]
+                },
+                {
+                    "slug": "white-and-success",
+                    "name": "white and Success",
+                    "colors": [
+                        "#ffffff",
+                        "#10B981"
+                    ]
+                },
+                {
+                    "slug": "success-and-black",
+                    "name": "Success and black",
+                    "colors": [
+                        "#10B981",
+                        "#000000"
+                    ]
+                },
+                {
+                    "slug": "black-and-success",
+                    "name": "black and Success",
+                    "colors": [
+                        "#000000",
+                        "#10B981"
+                    ]
+                },
+                {
+                    "slug": "warning-and-white",
+                    "name": "Warning and white",
+                    "colors": [
+                        "#F59E0B",
+                        "#ffffff"
+                    ]
+                },
+                {
+                    "slug": "white-and-warning",
+                    "name": "white and Warning",
+                    "colors": [
+                        "#ffffff",
+                        "#F59E0B"
+                    ]
+                },
+                {
+                    "slug": "warning-and-black",
+                    "name": "Warning and black",
+                    "colors": [
+                        "#F59E0B",
+                        "#000000"
+                    ]
+                },
+                {
+                    "slug": "black-and-warning",
+                    "name": "black and Warning",
+                    "colors": [
+                        "#000000",
+                        "#F59E0B"
+                    ]
+                }
+            ]
         },
         "typography": {
             "writingMode": true,
@@ -273,33 +399,132 @@
             "fluid": true,
             "fontFamilies": [
                 {
-                    "fontFamily": "variable-sample, sans-serif",
-                    "name": "variable-sample",
-                    "slug": "first",
+                    "name": "Primary Adamina",
+                    "slug": "primary",
+                    "fontFamily": "Adamina",
                     "fontFace": [
                         {
-                            "fontFamily": "variable-sample",
-                            "fontStyle": "auto",
-                            "fontWeight": "100 900",
-                            "fontDisplay": "swap",
+                            "fontFamily": "Adamina",
+                            "fontWeight": "400",
+                            "fontStyle": "normal",
+                            "fontStretch": "normal",
                             "src": [
-                                "file:./assets/fonts/variable-sample/variable-sample-variable.woff2"
+                                "file:./assets/fonts/adamina/adamina-400-normal.woff2"
                             ]
                         }
                     ]
                 },
                 {
-                    "fontFamily": "variable-sample, sans-serif",
-                    "name": "variable-sample",
-                    "slug": "second",
+                    "name": "Secondary Alegreya",
+                    "slug": "secondary",
+                    "fontFamily": "Alegreya",
                     "fontFace": [
                         {
-                            "fontFamily": "variable-sample",
-                            "fontStyle": "auto",
-                            "fontWeight": "100 900",
-                            "fontDisplay": "swap",
+                            "fontFamily": "Alegreya",
+                            "fontWeight": "400",
+                            "fontStyle": "italic",
+                            "fontStretch": "normal",
                             "src": [
-                                "file:./assets/fonts/variable-sample/variable-sample-variable.woff2"
+                                "file:./assets/fonts/alegreya/alegreya-400-italic.woff2"
+                            ]
+                        },
+                        {
+                            "fontFamily": "Alegreya",
+                            "fontWeight": "400",
+                            "fontStyle": "normal",
+                            "fontStretch": "normal",
+                            "src": [
+                                "file:./assets/fonts/alegreya/alegreya-400-normal.woff2"
+                            ]
+                        },
+                        {
+                            "fontFamily": "Alegreya",
+                            "fontWeight": "500",
+                            "fontStyle": "italic",
+                            "fontStretch": "normal",
+                            "src": [
+                                "file:./assets/fonts/alegreya/alegreya-500-italic.woff2"
+                            ]
+                        },
+                        {
+                            "fontFamily": "Alegreya",
+                            "fontWeight": "500",
+                            "fontStyle": "normal",
+                            "fontStretch": "normal",
+                            "src": [
+                                "file:./assets/fonts/alegreya/alegreya-500-normal.woff2"
+                            ]
+                        },
+                        {
+                            "fontFamily": "Alegreya",
+                            "fontWeight": "600",
+                            "fontStyle": "italic",
+                            "fontStretch": "normal",
+                            "src": [
+                                "file:./assets/fonts/alegreya/alegreya-600-italic.woff2"
+                            ]
+                        },
+                        {
+                            "fontFamily": "Alegreya",
+                            "fontWeight": "600",
+                            "fontStyle": "normal",
+                            "fontStretch": "normal",
+                            "src": [
+                                "file:./assets/fonts/alegreya/alegreya-600-normal.woff2"
+                            ]
+                        },
+                        {
+                            "fontFamily": "Alegreya",
+                            "fontWeight": "700",
+                            "fontStyle": "italic",
+                            "fontStretch": "normal",
+                            "src": [
+                                "file:./assets/fonts/alegreya/alegreya-700-italic.woff2"
+                            ]
+                        },
+                        {
+                            "fontFamily": "Alegreya",
+                            "fontWeight": "700",
+                            "fontStyle": "normal",
+                            "fontStretch": "normal",
+                            "src": [
+                                "file:./assets/fonts/alegreya/alegreya-700-normal.woff2"
+                            ]
+                        },
+                        {
+                            "fontFamily": "Alegreya",
+                            "fontWeight": "800",
+                            "fontStyle": "italic",
+                            "fontStretch": "normal",
+                            "src": [
+                                "file:./assets/fonts/alegreya/alegreya-800-italic.woff2"
+                            ]
+                        },
+                        {
+                            "fontFamily": "Alegreya",
+                            "fontWeight": "800",
+                            "fontStyle": "normal",
+                            "fontStretch": "normal",
+                            "src": [
+                                "file:./assets/fonts/alegreya/alegreya-800-normal.woff2"
+                            ]
+                        },
+                        {
+                            "fontFamily": "Alegreya",
+                            "fontWeight": "900",
+                            "fontStyle": "italic",
+                            "fontStretch": "normal",
+                            "src": [
+                                "file:./assets/fonts/alegreya/alegreya-900-italic.woff2"
+                            ]
+                        },
+                        {
+                            "fontFamily": "Alegreya",
+                            "fontWeight": "900",
+                            "fontStyle": "normal",
+                            "fontStretch": "normal",
+                            "src": [
+                                "file:./assets/fonts/alegreya/alegreya-900-normal.woff2"
                             ]
                         }
                     ]
@@ -475,17 +700,17 @@
                 {
                     "slug": "16-24",
                     "name": "16-24 | 1->1.5",
-                    "size": "clamp(1rem, .75remrem + .05vw, 1.5rem)"
+                    "size": "clamp(1rem, .75rem + .05vw, 1.5rem)"
                 },
                 {
                     "slug": "16-32",
                     "name": "16-32 | 1->2",
-                    "size": "clamp(1rem, .5remrem + .1vw, 2rem)"
+                    "size": "clamp(1rem, .5rem + .1vw, 2rem)"
                 },
                 {
                     "slug": "16-40",
                     "name": "16-40 | 1->2.5",
-                    "size": "clamp(1rem, .25remrem + .15vw, 2.5rem)"
+                    "size": "clamp(1rem, .25rem + .15vw, 2.5rem)"
                 },
                 {
                     "slug": "16-56",
@@ -510,52 +735,52 @@
                 {
                     "slug": "24-32",
                     "name": "24-32 | 1.5->2",
-                    "size": "clamp(1.5rem, 1.25remrem + .05vw, 2rem)"
+                    "size": "clamp(1.5rem, 1.25rem + .05vw, 2rem)"
                 },
                 {
                     "slug": "24-40",
                     "name": "24-40 | 1.5->2.5",
-                    "size": "clamp(1.5rem, 1remrem + .1vw, 2.5rem)"
+                    "size": "clamp(1.5rem, 1rem + .1vw, 2.5rem)"
                 },
                 {
                     "slug": "24-56",
                     "name": "24-56 | 1.5->3.5",
-                    "size": "clamp(1.5rem, .5remrem + .2vw, 3.5rem)"
+                    "size": "clamp(1.5rem, .5rem + .2vw, 3.5rem)"
                 },
                 {
                     "slug": "24-72",
                     "name": "24-72 | 1.5->4.5",
-                    "size": "clamp(1.5rem, 0remrem + .3vw, 4.5rem)"
+                    "size": "clamp(1.5rem, 0rem + .3vw, 4.5rem)"
                 },
                 {
                     "slug": "32-40",
                     "name": "32-40 | 2->2.5",
-                    "size": "clamp(2rem, 1.75remrem + .05vw, 2.5rem)"
+                    "size": "clamp(2rem, 1.75rem + .05vw, 2.5rem)"
                 },
                 {
                     "slug": "32-56",
                     "name": "32-56 | 2->3.5",
-                    "size": "clamp(2rem, 1.25remrem + .15vw, 3.5rem)"
+                    "size": "clamp(2rem, 1.25rem + .15vw, 3.5rem)"
                 },
                 {
                     "slug": "32-72",
                     "name": "32-72 | 2->4.5",
-                    "size": "clamp(2rem, .75remrem + .25vw, 4.5rem)"
+                    "size": "clamp(2rem, .75rem + .25vw, 4.5rem)"
                 },
                 {
                     "slug": "40-56",
                     "name": "40-56 | 2.5->3.5",
-                    "size": "clamp(2.5rem, 2remrem + .1vw, 3.5rem)"
+                    "size": "clamp(2.5rem, 2rem + .1vw, 3.5rem)"
                 },
                 {
                     "slug": "40-72",
                     "name": "40-72 | 2.5->4.5",
-                    "size": "clamp(2.5rem, 1.5remrem + .2vw, 4.5rem)"
+                    "size": "clamp(2.5rem, 1.5rem + .2vw, 4.5rem)"
                 },
                 {
                     "slug": "40-120",
                     "name": "40-120 | 2.5->7.5",
-                    "size": "clamp(2.5rem, 0remrem + .5vw, 7.5rem)"
+                    "size": "clamp(2.5rem, 0rem + .5vw, 7.5rem)"
                 },
                 {
                     "slug": "40-160",
@@ -575,22 +800,22 @@
                 {
                     "slug": "56-72",
                     "name": "56-72 | 3.5->4.5",
-                    "size": "clamp(3.5rem, 3remrem + .1vw, 4.5rem)"
+                    "size": "clamp(3.5rem, 3rem + .1vw, 4.5rem)"
                 },
                 {
                     "slug": "56-80",
                     "name": "56-80 | 3.5->5",
-                    "size": "clamp(3.5rem, 2.75remrem + .15vw, 5rem)"
+                    "size": "clamp(3.5rem, 2.75rem + .15vw, 5rem)"
                 },
                 {
                     "slug": "56-120",
                     "name": "56-120 | 3.5->7.5",
-                    "size": "clamp(3.5rem, 1.5remrem + .4vw, 7.5rem)"
+                    "size": "clamp(3.5rem, 1.5rem + .4vw, 7.5rem)"
                 },
                 {
                     "slug": "56-160",
                     "name": "56-160 | 3.5->10",
-                    "size": "clamp(3.5rem, .25remrem + .65vw, 10rem)"
+                    "size": "clamp(3.5rem, .25rem + .65vw, 10rem)"
                 },
                 {
                     "slug": "56-200",
@@ -605,22 +830,22 @@
                 {
                     "slug": "72-80",
                     "name": "72-80 | 4.5->5",
-                    "size": "clamp(4.5rem, 4.25remrem + .05vw, 5rem)"
+                    "size": "clamp(4.5rem, 4.25rem + .05vw, 5rem)"
                 },
                 {
                     "slug": "72-120",
                     "name": "72-120 | 4.5->7.5",
-                    "size": "clamp(4.5rem, 3remrem + .3vw, 7.5rem)"
+                    "size": "clamp(4.5rem, 3rem + .3vw, 7.5rem)"
                 },
                 {
                     "slug": "72-160",
                     "name": "72-160 | 4.5->10",
-                    "size": "clamp(4.5rem, 1.75remrem + .55vw, 10rem)"
+                    "size": "clamp(4.5rem, 1.75rem + .55vw, 10rem)"
                 },
                 {
                     "slug": "72-200",
                     "name": "72-200 | 4.5->12.5",
-                    "size": "clamp(4.5rem, .5remrem + .8vw, 12.5rem)"
+                    "size": "clamp(4.5rem, .5rem + .8vw, 12.5rem)"
                 },
                 {
                     "slug": "72-240",
@@ -656,52 +881,54 @@
     },
     "styles": {
         "css": "where(.wp-site-blocks) > * { margin-block-start: 0 !important; margin-block-end: 0 !important; }",
-           "spacing": {
-                "padding": {
-                    "top": "0",
-                    "right": "var:preset|spacing|16-72",
-                    "bottom": "0",
-                    "left": "var:preset|spacing|16-72"
-                }
-            },
-            "color": {
-                "text": "var:custom|color|text",
-                "background": "var:custom|color|background"
-            },
         "typography": {
-            "fontFamily": "var(--wp--preset--font-family--first)"
+            "fontFamily": "var:custom|font|body"
         },
+        "color": {
+            "text": "var:custom|color|text",
+            "background": "var:custom|color|background"
+        },
+        "spacing": {
+            "padding": {
+                "top": "0",
+                "right": "var:preset|spacing|16-72",
+                "bottom": "0",
+                "left": "var:preset|spacing|16-72"
+            }
+        },
+
+
         "elements": {
             "heading": {
                 "typography": {
-                    "fontFamily": "var(--wp--preset--font-family--second)"
+                    "fontFamily": "var:custom|font|title"
                 }
             },
             "h1": {
                 "typography": {
-                    "fontSize": "var(--wp--preset--font-size--h-one)",
-                    "lineHeight": "var:custom|typography|h1|line-height"
+                    "fontSize": "var:preset|font-size|h-one",
+                    "lineHeight": "var:custom|h1|line-height"
                 }
             },
             "h2": {
                 "typography": {
-                    "fontSize": "var(--wp--preset--font-size--h-three)",
-                    "lineHeight": "var:custom|typography|h2|line-height"
+                    "fontSize": "var:preset|font-size|h-three",
+                    "lineHeight": "var:custom|h2|line-height"
                 }
             },
             "h3": {
                 "typography": {
-                    "fontSize": "var(--wp--preset--font-size--h-four)"
+                    "fontSize": "var:preset|font-size|h-four"
                 }
             },
             "h4": {
                 "typography": {
-                    "fontSize": "var(--wp--preset--font-size--h-four)"
+                    "fontSize": "var:preset|font-size|h-four"
                 }
             },
             "h5": {
                 "typography": {
-                    "fontSize": "var(--wp--preset--font-size--h-five)"
+                    "fontSize": "var:preset|font-size|h-five"
                 }
             }
         },
@@ -711,93 +938,93 @@
                     "blockGap": "0"
                 }
             },
-            "core/heading":{
+            "core/heading": {
                 "spacing": {
                     "margin": {
-                        "top": "var:custom|spacing|heading|margin-y",
-                        "bottom": "var:custom|spacing|heading|margin-y"
+                        "top": "var:custom|heading|margin-y",
+                        "bottom": "var:custom|heading|margin-y"
                     }
                 }
             },
             "core/paragraph": {
                 "spacing": {
                     "margin": {
-                        "top": "var:custom|spacing|paragraph|margin-y",
-                        "bottom": "var:custom|spacing|paragraph|margin-y"
+                        "top": "var:custom|paragraph|margin-y",
+                        "bottom": "var:custom|paragraph|margin-y"
                     }
                 },
                 "typography": {
-                    "fontSize": "var(--wp--preset--font-size--m)",
-                    "lineHeight": "var:custom|typography|paragraph|line-height"
+                    "fontSize": "var:preset|font-size|m",
+                    "lineHeight": "var:custom|paragraph|line-height"
                 }
             },
             "core/quote": {
                 "typography": {
-                    "fontSize": "var(--wp--preset--font-size--h-four)",
-                    "fontWeight": "var:custom|typography|quote|font-weight",
-                    "lineHeight": "var:custom|typography|quote|line-height",
-                    "textAlign": "var:custom|typography|quote|text-align",
-                    "fontStyle": "var:custom|typography|quote|font-style"
+                    "fontSize": "var:preset|font-size|h-four",
+                    "fontWeight": "var:custom|quote|font-weight",
+                    "lineHeight": "var:custom|quote|line-height",
+                    "textAlign": "var:custom|quote|text-align",
+                    "fontStyle": "var:custom|quote|font-style"
                 },
                 "css": "text-wrap:pretty;"
             },
             "core/list-item": {
                 "typography": {
-                    "fontSize": "var(--wp--preset--font-size--m)",
-                    "lineHeight": "var:custom|typography|list-item|line-height"
+                    "fontSize": "var:preset|font-size|m",
+                    "lineHeight": "var:custom|list-item|line-height"
                 },
                 "spacing": {
                     "margin": {
-                        "top": "var:custom|spacing|list-item|margin-y",
-                        "bottom": "var:custom|spacing|list-item|margin-y"
+                        "top": "var:custom|list-item|margin-y",
+                        "bottom": "var:custom|list-item|margin-y"
                     }
                 }
             },
             "core/button": {
-                "css": "transition:var(--wp--custom--transition--button)",
+                "css": "transition:var(--wp--custom--button--transition)",
                 "border": {
-                    "radius": "var:custom|border|button|radius",
-                    "color": "var(--wp--preset--color--accent)",
-                    "width": "var:custom|border|button|width",
-                    "style": "var:custom|border|button|style"
+                    "radius": "var:custom|button|radius",
+                    "color": "var:preset|color|accent",
+                    "width": "var:custom|button|width",
+                    "style": "var:custom|button|style"
                 },
                 "color": {
                     "text": "currentColor",
-                    "background": "var(--wp--preset--color--accent)"
+                    "background": "var:preset|color|accent"
                 },
                 "typography": {
                     "textTransform": "none",
-                    "fontSize": "var(--wp--preset--font-size--s)",
-                    "fontWeight": "var:custom|typography|button|font-weight"
+                    "fontSize": "var:preset|font-size|s",
+                    "fontWeight": "var:custom|button|font-weight"
                 },
                 "spacing": {
                     "padding": {
-                        "bottom": "var:custom|spacing|button|padding-y",
-                        "left": "var:custom|spacing|button|padding-x",
-                        "right": "var:custom|spacing|button|padding-x",
-                        "top": "var:custom|spacing|button|padding-y"
+                        "bottom": "var:custom|button|padding-y",
+                        "left": "var:custom|button|padding-x",
+                        "right": "var:custom|button|padding-x",
+                        "top": "var:custom|button|padding-y"
                     }
                 },
                 "variations": {
                     "outline": {
                         "color": {
                             "background": "transparent",
-                            "text": "var(--wp--preset--color--accent)"
+                            "text": "var:preset|color|accent"
                         },
                         "border": {
                             "color": "currentColor"
                         },
                         "typography": {
                             "textTransform": "none",
-                            "fontSize": "var(--wp--preset--font-size--s)",
-                            "fontWeight": "var:custom|typography|button|font-weight"
+                            "fontSize": "var:preset|font-size|s",
+                            "fontWeight": "var:custom|button|font-weight"
                         }
                     }
                 }
             }
         }
     },
-        "templateParts": [
+    "templateParts": [
         {
             "area": "header",
             "name": "header",

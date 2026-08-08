@@ -1,7 +1,7 @@
 @media (max-width: 767px) {
     .align-full-mobile {
-        margin-right: calc(var(--wp--style--root--padding-right) * -1);
-        margin-left: calc(var(--wp--style--root--padding-left) * -1);
+        margin-right: calc(var(--wp--style--root--padding-right) * -1) !important;
+        margin-left: calc(var(--wp--style--root--padding-left) * -1) !important;
     }
     main > .alignwide {
         margin-right: calc(var(--wp--style--root--padding-right) * -1) !important;

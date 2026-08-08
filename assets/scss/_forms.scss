@@ -13,26 +13,26 @@ input[type="week"],
 input[type="color"],
 select,
 textarea {
-    color: var(--wp--custom--form--input--color--text);
-    background-color: var(--wp--custom--form--input--color--background);
-    border: var(--wp--custom--form--input--border--width) var(--wp--custom--form--input--border--style) var(--wp--custom--form--input--color--border);
-    border-radius: var(--wp--custom--form--input--border--radius);
-    padding: var(--wp--custom--form--input--spacing--padding-y) var(--wp--custom--form--input--spacing--padding-x);
-    font-size: var(--wp--custom--form--input--typography--font-size);
-    line-height: var(--wp--custom--form--input--typography--line-height);
-    transition: var(--wp--custom--form--input--transition);
+    color: var(--wp--custom--input--color-text);
+    background-color: var(--wp--custom--input--color-background);
+    border: var(--wp--custom--input--border-width) var(--wp--custom--input--border-style) var(--wp--custom--input--color-border);
+    border-radius: var(--wp--custom--input--border-radius);
+    padding: var(--wp--custom--input--padding-y) var(--wp--custom--input--padding-x);
+    font-size: var(--wp--custom--input--font-size);
+    line-height: var(--wp--custom--input--line-height);
+    transition: var(--wp--custom--input--transition);
     box-sizing: border-box;
     width: auto;
     display: block;
     max-width: 100%;
 
     &::placeholder {
-        color: var(--wp--custom--form--input--color--placeholder);
+        color: var(--wp--custom--input--color-placeholder);
     }
 
     &:focus {
         outline: none;
-        border-color: var(--wp--custom--form--input--color--focus-border);
+        border-color: var(--wp--custom--input--color-focus-border);
     }
 }
 label, span{
@@ -40,24 +40,24 @@ label, span{
 }
 
 textarea {
-    min-height: var(--wp--custom--form--textarea--spacing--min-height);
+    min-height: var(--wp--custom--textarea--min-height);
 }
 
 input[type="submit"] {
-    color: var(--wp--custom--form--submit--color--text);
-    background-color: var(--wp--custom--form--submit--color--background);
-    border: var(--wp--custom--form--submit--border--width) var(--wp--custom--form--submit--border--style) var(--wp--custom--form--submit--color--border);
-    border-radius: var(--wp--custom--form--submit--border--radius);
-    padding: var(--wp--custom--form--submit--spacing--padding-y) var(--wp--custom--form--submit--spacing--padding-x);
-    font-size: var(--wp--custom--form--submit--typography--font-size);
-    font-weight: var(--wp--custom--form--submit--typography--font-weight);
-    text-transform: var(--wp--custom--form--submit--typography--text-transform);
-    transition: var(--wp--custom--form--submit--transition);
+    color: var(--wp--custom--submit--color-text);
+    background-color: var(--wp--custom--submit--color-background);
+    border: var(--wp--custom--submit--border-width) var(--wp--custom--submit--border-style) var(--wp--custom--submit--color-border);
+    border-radius: var(--wp--custom--submit--border-radius);
+    padding: var(--wp--custom--submit--padding-y) var(--wp--custom--submit--padding-x);
+    font-size: var(--wp--custom--submit--font-size);
+    font-weight: var(--wp--custom--submit--font-weight);
+    text-transform: var(--wp--custom--submit--text-transform);
+    transition: var(--wp--custom--submit--transition);
     box-sizing: border-box;
     cursor: pointer;
     display: inline-block;
 
     &:hover {
-        background-color: var(--wp--custom--form--submit--color--hover-background);
+        background-color: var(--wp--custom--submit--color-hover-background);
     }
 }
