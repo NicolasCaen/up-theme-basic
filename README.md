@@ -50,18 +50,77 @@ up-theme-basic/
 
 ## Variables custom (theme.json)
 
-Les paramètres centralisés se trouvent dans `settings.custom` du `theme.json` :
+Les paramètres centralisés se trouvent dans `settings.custom` du `theme.json`.
+La structure suit le pattern **`élément|propriété`** : chaque élément (heading, button, input…) regroupe toutes ses propriétés sous une seule clé, sans niveau de catégorie intermédiaire (plus de `spacing`, `border`, `typography`…).
 
-| Namespace | Usage |
-|---|---|
-| `custom.color` | Couleurs globales (text, background) |
-| `custom.spacing` | Marges et paddings par bloc (heading, paragraph, list-item, button) |
-| `custom.border` | Bordures par bloc (button radius, width, style) |
-| `custom.typography` | Line-height, font-weight, text-align par élément |
-| `custom.transition` | Transitions par composant |
-| `custom.form.input` | Styles inputs (couleur, border, padding, typo, transition) |
-| `custom.form.textarea` | Styles textarea (min-height) |
-| `custom.form.submit` | Styles bouton submit (couleur, border, padding, typo, hover) |
+### Variables existantes
+
+| Clé JSON | Variable CSS | Propriétés |
+|---|---|---|
+| `custom.font` | `--wp--custom--font--*` | `body`, `title` (font-family) |
+| `custom.color` | `--wp--custom--color--*` | `text`, `background` |
+| `custom.navigation` | `--wp--custom--navigation--*` | `footer` (nom du menu) |
+| `custom.heading` | `--wp--custom--heading--*` | `margin-y` |
+| `custom.h1` | `--wp--custom--h1--*` | `line-height` |
+| `custom.h2` | `--wp--custom--h2--*` | `line-height` |
+| `custom.paragraph` | `--wp--custom--paragraph--*` | `margin-y`, `line-height` |
+| `custom.list-item` | `--wp--custom--list-item--*` | `margin-y`, `line-height` |
+| `custom.quote` | `--wp--custom--quote--*` | `font-weight`, `line-height`, `text-align`, `font-style` |
+| `custom.button` | `--wp--custom--button--*` | `padding-y`, `padding-x`, `radius`, `width`, `style`, `font-weight`, `transition` |
+| `custom.input` | `--wp--custom--input--*` | `color-text`, `color-background`, `color-border`, `color-placeholder`, `color-focus-border`, `padding-y`, `padding-x`, `border-radius`, `border-width`, `border-style`, `font-size`, `line-height`, `transition` |
+| `custom.textarea` | `--wp--custom--textarea--*` | `min-height` |
+| `custom.submit` | `--wp--custom--submit--*` | `color-text`, `color-background`, `color-border`, `color-hover-background`, `padding-y`, `padding-x`, `border-radius`, `border-width`, `border-style`, `font-size`, `font-weight`, `text-transform`, `transition` |
+
+### Référencer une variable
+
+Dans `theme.json`, deux syntaxes selon le contexte :
+
+```json
+"margin": "var:custom|button|padding-y"
+"color": "var:preset|color|accent"
+```
+
+Dans les fichiers SCSS / CSS :
+
+```scss
+padding: var(--wp--custom--button--padding-y) var(--wp--custom--button--padding-x);
+color: var(--wp--preset--color--accent);
+```
+
+### Ajouter une variable custom
+
+1. **Définir** la variable dans `settings.custom` du `theme.json` :
+
+```json
+"custom": {
+    "card": {
+        "radius": "0.5rem",
+        "padding-y": "1rem",
+        "padding-x": "1.5rem"
+    }
+}
+```
+
+2. **Référencer** dans `theme.json` via la syntaxe `var:custom|` :
+
+```json
+"border": {
+    "radius": "var:custom|card|radius"
+}
+```
+
+3. **Utiliser** dans les fichiers SCSS via la variable CSS générée automatiquement :
+
+```scss
+.card {
+    border-radius: var(--wp--custom--card--radius);
+    padding: var(--wp--custom--card--padding-y) var(--wp--custom--card--padding-x);
+}
+```
+
+> **Règle de nommage** : une clé imbriquée `card.radius` produit la variable `--wp--custom--card--radius`. Les tirets `-` dans les noms de propriétés sont conservés (ex: `padding-y` → `--wp--custom--card--padding-y`).
+>
+> **Références presets** : pour pointer vers un preset (couleur, font-size, font-family…), utiliser `var:preset|catégorie|slug` dans le JSON (ex: `var:preset|color|accent`). Ne pas utiliser `var(--wp--preset--...)` comme valeur JSON, sauf dans une chaîne CSS composite (ex: un shadow).
 
 ## Changelog
 
