@@ -16,7 +16,7 @@
                 "footer": "Footer Menu"
             },
             "heading": {
-                "margin-y": ".3em"
+                "margin-y": "var:preset|spacing|24"
             },
             "h1": {
                 "line-height": "1.15"
@@ -79,6 +79,11 @@
                 "font-weight": "600",
                 "text-transform": "none",
                 "transition": "all .4s"
+            },
+            "media-text": {
+                "padding-x": "0",
+                "column-gap": "var:preset|spacing|24",
+                "row-gap": "var:preset|spacing|56-72"
             }
         },
         "appearanceTools": true,

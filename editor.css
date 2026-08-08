@@ -110,3 +110,14 @@ input[type=submit] {
 input[type=submit]:hover {
   background-color: var(--wp--custom--submit--color-hover-background);
 }
+
+.wp-block-media-text {
+  -moz-column-gap: var(--wp--custom--media-text--column-gap);
+       column-gap: var(--wp--custom--media-text--column-gap);
+  -moz-column-gap: var(--wp--custom--media-text--row-gap);
+       column-gap: var(--wp--custom--media-text--row-gap);
+}
+.wp-block-media-text > .wp-block-media-text__content {
+  padding-left: var(--wp--custom--media-text--padding-x);
+  padding-right: var(--wp--custom--media-text--padding-x);
+}

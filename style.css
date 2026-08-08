@@ -3,7 +3,7 @@
 Theme Name: Up Thème Basic
 Author: GEHIN Nicolas
 Description: Thème ng1@basic
-Version: 0.1.0.1
+Version: 0.1.0.2
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: ng1-base
@@ -118,4 +118,15 @@ input[type=submit] {
 }
 input[type=submit]:hover {
   background-color: var(--wp--custom--submit--color-hover-background);
+}
+
+.wp-block-media-text {
+  -moz-column-gap: var(--wp--custom--media-text--column-gap);
+       column-gap: var(--wp--custom--media-text--column-gap);
+  -moz-column-gap: var(--wp--custom--media-text--row-gap);
+       column-gap: var(--wp--custom--media-text--row-gap);
+}
+.wp-block-media-text > .wp-block-media-text__content {
+  padding-left: var(--wp--custom--media-text--padding-x);
+  padding-right: var(--wp--custom--media-text--padding-x);
 }
