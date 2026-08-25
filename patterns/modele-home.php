@@ -14,5 +14,3 @@
 ?>
 <!-- wp:pattern {"slug":"ng1-base/cover-home"} /-->
 <!-- wp:pattern {"slug":"ng1-base/paragraph-lorem"} /-->
-<!-- wp:pattern {"slug":"ng1-base/paragraph-lorem"} /--> 
-<!-- wp:pattern {"slug":"ng1-base/paragraph-lorem"} /-->   

@@ -22,7 +22,7 @@ textarea {
     line-height: var(--wp--custom--input--line-height);
     transition: var(--wp--custom--input--transition);
     box-sizing: border-box;
-    width: auto;
+    width: 100%;
     display: block;
     max-width: 100%;
 
@@ -35,12 +35,73 @@ textarea {
         border-color: var(--wp--custom--input--color-focus-border);
     }
 }
-label, span{
-    display:block;
+
+input[type="date"],
+input[type="time"],
+input[type="datetime-local"],
+input[type="month"],
+input[type="week"] {
+    &::-webkit-datetime-edit-text,
+    &::-webkit-datetime-edit {
+        color: var(--wp--custom--input--color-placeholder);
+    }
+}
+
+label {
+    display: block;
+    font-family: var(--wp--custom--label--font-family);
+    font-size: var(--wp--custom--label--font-size);
+    font-weight: var(--wp--custom--label--font-weight);
+    line-height: var(--wp--custom--label--line-height);
+
+    &:has(input[type="checkbox"]) {
+        font-weight: normal;
+    }
+}
+
+span {
+    display: block;
 }
 
 textarea {
     min-height: var(--wp--custom--textarea--min-height);
+}
+
+.cf7-grid {
+    display: grid;
+    grid-template-columns: repeat(var(--wp--custom--form--columns), 1fr);
+    column-gap: var(--wp--custom--form--column-gap);
+    row-gap: var(--wp--custom--form--row-gap);
+
+    .field-message,
+    .field-acceptance,
+    .field-submit {
+        grid-column: 1 / -1;
+    }
+
+    .wpcf7-acceptance {
+        label {
+            display: flex;
+            align-items: var(--wp--custom--checkbox--align-items);
+            gap: var(--wp--custom--checkbox--gap);
+        }
+
+        input[type="checkbox"] {
+            width: auto;
+            flex-shrink: 0;
+            margin: 0;
+        }
+
+        .wpcf7-list-item-label {
+            display: inline;
+        }
+    }
+}
+
+@media (max-width: 499px) {
+    .cf7-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 input[type="submit"] {
@@ -58,6 +119,6 @@ input[type="submit"] {
     display: inline-block;
 
     &:hover {
-        background-color: var(--wp--custom--submit--color-hover-background);
+        background-color: var(--wp--custom--submit--color-background-hover);
     }
 }

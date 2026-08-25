@@ -1,0 +1,72 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/theme.json",
+    "version": 3,
+    "slug": "style5",
+    "title": "style5",
+    "blockTypes": [
+        "core/group",
+        "core/columns",
+        "core/column",
+        "core/cover"
+    ],
+    "styles": {
+        "css":"p.is-style-label{color:inherit !important} & .is-style-label{color:var(--wp--preset--color--primary-light) !important",
+        "color": {
+            "background": "var:custom|style|5|background",
+            "text": "var:custom|style|5|text"
+        },
+        "blocks": {
+            "core/button": {
+                "color": {
+                    "background": "var:custom|style|5|button|background",
+                    "text": "var:custom|style|5|button|text"
+                },
+                "border": {
+                    "color": "var:custom|style|5|button|border-color",
+                    "width": "1px",
+                    "radius": "40"
+                },
+                ":hover": {
+                    "color": {
+                        "background": "var:custom|style|5|button|hover-background",
+                        "text": "var:custom|style|5|button|hover-text"
+                    },
+                    "border": {
+                        "color": "var:custom|style|5|button|hover-border"
+                    }
+                }
+            }
+        },
+        "elements": {
+            "button": {
+                ":hover": {
+                    "color": {
+                        "background": "var:custom|style|5|button|hover-background !important",
+                        "text": "var:custom|style|5|button|hover-text !important"
+                    },
+                    "border": {
+                        "color": "var:custom|style|5|button|hover-border !important"
+                    }
+                }
+            },
+            "heading": {
+                "color": {
+                    "text": "var:custom|style|5|heading|text"
+                }
+            },
+            "link": {
+                "color": {
+                    "text": "var:custom|style|5|link|text"
+                },
+                ":hover": {
+                    "color": {
+                        "text": "var:custom|style|5|link|hover-text"
+                    }
+                },
+                "typography": {
+                    "textDecoration": "none"
+                }
+            }
+        }
+    }
+}

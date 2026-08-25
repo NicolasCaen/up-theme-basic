@@ -11,19 +11,59 @@
     ],
     "styles": {
         "color": {
-            "background": "var:preset|color|base",
-            "text": "var:preset|color|contrast"
+            "background": "var:custom|style|1|background",
+            "text": "var:custom|style|1|text"
         },
         "blocks": {
-            "core/button":{
+            "core/button": {
                 "color": {
-                    "background": "var:preset|color|base",
-                    "text": "var:preset|color|contrast-2"
+                    "background": "var:custom|style|1|button|background",
+                    "text": "var:custom|style|1|button|text"
                 },
                 "border": {
-                    "color": "var:preset|color|contrast-3",
+                    "color": "var:custom|style|1|button|border-color",
                     "width": "1px",
                     "radius": "40"
+                },
+                ":hover": {
+                    "color": {
+                        "background": "var:custom|style|1|button|hover-background",
+                        "text": "var:custom|style|1|button|hover-text"
+                    },
+                    "border": {
+                        "color": "var:custom|style|1|button|hover-border"
+                    }
+                }
+            }
+        },
+        "elements": {
+            "button": {
+                ":hover": {
+                    "color": {
+                        "background": "var:custom|style|1|button|hover-background !important",
+                        "text": "var:custom|style|1|button|hover-text !important"
+                    },
+                    "border": {
+                        "color": "var:custom|style|1|button|hover-border !important"
+                    }
+                }
+            },
+            "heading": {
+                "color": {
+                    "text": "var:custom|style|1|heading|text"
+                }
+            },
+            "link": {
+                "color": {
+                    "text": "var:custom|style|1|link|text"
+                },
+                ":hover": {
+                    "color": {
+                        "text": "var:custom|style|1|link|hover-text"
+                    }
+                },
+                "typography": {
+                    "textDecoration": "none"
                 }
             }
         }

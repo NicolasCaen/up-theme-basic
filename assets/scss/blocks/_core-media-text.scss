@@ -1,6 +1,6 @@
 .wp-block-media-text {
     column-gap: var(--wp--custom--media-text--column-gap);
-    column-gap: var(--wp--custom--media-text--row-gap);
+    row-gap: var(--wp--custom--media-text--row-gap);
     >.wp-block-media-text {
         &__content {
             padding-left: var(--wp--custom--media-text--padding-x);
