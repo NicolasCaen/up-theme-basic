@@ -1,0 +1,70 @@
+{
+    "pages": [
+        {
+            "slug": "home",
+            "title": "Accueil",
+            "template": "home",
+            "parent_slug": ""
+        },
+        {
+            "slug": "presentation",
+            "title": "Présentation",
+            "template": "presentation",
+            "parent_slug": ""
+        },
+        {
+            "slug": "qui-sommes-nous",
+            "title": "vous êtes",
+            "template": "qui-sommes-nous",
+            "parent_slug": ""
+        },
+        {
+            "slug": "projets",
+            "title": "projets",
+            "template": "projets",
+            "parent_slug": ""
+        },
+        {
+            "slug": "contact",
+            "title": "Contact",
+            "template": "contact",
+            "parent_slug": ""
+        },
+        {
+            "slug": "notre-mission",
+            "title": "Mission EUROPE DIRECT",
+            "template": "notre-mission",
+            "parent_slug": ""
+        },
+        {
+            "slug": "partenaires",
+            "title": "Nos partenaires",
+            "template": "partenaires",
+            "parent_slug": ""
+        },
+        {
+            "slug": "actualites",
+            "title": "Actualités",
+            "template": "actualites",
+            "parent_slug": ""
+        },
+        {
+            "slug": "debats",
+            "title": "Débats",
+            "template": "debats",
+            "parent_slug": ""
+        },
+        {
+            "slug": "projets",
+            "title": "Projets",
+            "template": "projets",
+            "parent_slug": ""
+        },
+        {
+            "slug": "ressources",
+            "title": "Ressources",
+            "template": "ressources",
+            "parent_slug": ""
+        }
+    ]
+}

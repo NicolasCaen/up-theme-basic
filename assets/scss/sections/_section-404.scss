@@ -1,0 +1,12 @@
+.grid-404{
+    >*{
+        grid-row: 1;
+        grid-column: 1 ;
+        vertical-align: center;
+        justify-content: center;
+       margin: auto;
+    }
+    figure{
+        mix-blend-mode: exclusion;
+    }
+}

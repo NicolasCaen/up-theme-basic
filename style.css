@@ -3,7 +3,7 @@
 Theme Name: Up Thème Basic
 Author: GEHIN Nicolas
 Description: Thème ng1@basic
-Version: 1.0.0.0
+Version: 1.0.0.1
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: ng1-base
@@ -54,6 +54,9 @@ textarea {
   width: 100%;
   display: block;
   max-width: 100%;
+}
+input[type=text]::-moz-placeholder, input[type=email]::-moz-placeholder, input[type=url]::-moz-placeholder, input[type=password]::-moz-placeholder, input[type=search]::-moz-placeholder, input[type=number]::-moz-placeholder, input[type=tel]::-moz-placeholder, input[type=date]::-moz-placeholder, input[type=time]::-moz-placeholder, input[type=datetime-local]::-moz-placeholder, input[type=month]::-moz-placeholder, input[type=week]::-moz-placeholder, input[type=color]::-moz-placeholder, select::-moz-placeholder, textarea::-moz-placeholder {
+  color: var(--wp--custom--input--color-placeholder);
 }
 input[type=text]::placeholder,
 input[type=email]::placeholder,
@@ -125,7 +128,8 @@ textarea {
 .cf7-grid {
   display: grid;
   grid-template-columns: repeat(var(--wp--custom--form--columns), 1fr);
-  column-gap: var(--wp--custom--form--column-gap);
+  -moz-column-gap: var(--wp--custom--form--column-gap);
+       column-gap: var(--wp--custom--form--column-gap);
   row-gap: var(--wp--custom--form--row-gap);
 }
 .cf7-grid .field-message,
@@ -170,13 +174,23 @@ input[type=submit]:hover {
   background-color: var(--wp--custom--submit--color-background-hover);
 }
 
+.grid-404 > * {
+  grid-row: 1;
+  grid-column: 1;
+  vertical-align: center;
+  justify-content: center;
+  margin: auto;
+}
+.grid-404 figure {
+  mix-blend-mode: exclusion;
+}
+
 .wp-block-media-text {
-  column-gap: var(--wp--custom--media-text--column-gap);
+  -moz-column-gap: var(--wp--custom--media-text--column-gap);
+       column-gap: var(--wp--custom--media-text--column-gap);
   row-gap: var(--wp--custom--media-text--row-gap);
 }
 .wp-block-media-text > .wp-block-media-text__content {
   padding-left: var(--wp--custom--media-text--padding-x);
   padding-right: var(--wp--custom--media-text--padding-x);
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

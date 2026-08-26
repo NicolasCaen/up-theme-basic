@@ -1,5 +1,10 @@
 # Changelog
 
+## v1.0.0.1 — 2026-08-26
+
+### Itération mineure
+- Bump de version PATCH du thème.
+
 ## v1.0.0.0 — 2026-08-25
 
 ### Ajouts

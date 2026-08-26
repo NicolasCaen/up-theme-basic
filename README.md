@@ -148,5 +148,6 @@ color: var(--wp--preset--color--primary-default);
 
 ## Changelog
 
+- 2026-08-26 · v1.0.0.1 · Itération mineure du thème.
 - 2026-08-25 · v1.0.0.0 · Refonte du système de variables custom **par élément** (règle d'or : tout sous un élément sauf `font`), aligné sur up-sylphane. Nouvelle palette sémantique (primary/secondary/neutral), nouvelle échelle typographique (`body-*` / `title-*`), 42 gradients + 42 duotones, navigation principal/footer, styles de sections 1-5 + default. Voir `CHANGELOG.md`.
 - 2026-08-07 · v0.1.0.0 · Création du thème. Architecture FSE, theme.json avec variables custom centralisées, templates personnalisés, patterns, SCSS modulaire, styles de formulaires.
