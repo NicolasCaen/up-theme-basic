@@ -1,14 +1,14 @@
 <?php
 /**
  * Title: Boucle de single
- * Slug: ng1-base/query-loop
+ * Slug: up-coder/query-loop
  * Categories: query
  * Block Types: core/query,
  * Description: Boucle de single
  *
  * @package WordPress
- * @subpackage ng1-base
- * @since ng1-base 1.0
+ * @subpackage up-coder
+ * @since up-coder 1.0
  */
 
 ?>

@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: spacer header-height
- * Slug: ng1-base/spacer-header-height
+ * Slug: up-coder/spacer-header-height
  * Categories: design
  * Keywords: pixelea,up,ng1,espacement,spacer,header
  * Block Types: core/spacer

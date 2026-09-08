@@ -6,7 +6,7 @@
  * listées (avec slug, titre, template et page parent optionnels).
  * Permet aussi de générer les fichiers associés : template, modèle et content.
  *
- * @package up-theme-basic
+ * @package up-coder
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -109,7 +109,7 @@ function updp_generate_template_content( $slug ) {
 
 <!-- wp:group {"tagName":"main","className":"is-layout-flow wp-block-group-is-layout-flow","layout":{"type":"constrained"}} -->
 <main class="wp-block-group is-layout-flow wp-block-group-is-layout-flow">
-      <!-- wp:pattern {"slug":"ng1-base/modele-{$slug}"} /-->
+      <!-- wp:pattern {"slug":"up-coder/modele-{$slug}"} /-->
 </main>
 <!-- /wp:group -->
 
@@ -132,20 +132,20 @@ function updp_generate_modele_content( $slug, $title ) {
 <?php
 /**
  * Title: {$title_escaped}
- * Slug: ng1-base/modele-{$slug_escaped}
+ * Slug: up-coder/modele-{$slug_escaped}
  * Categories: query
  * Block Types: core/post-content
  * Description: Contenu de base des pages {$title_escaped}
  *
  * @package WordPress
- * @subpackage ng1-base
- * @since ng1-base 1.0
+ * @subpackage up-coder
+ * @since up-coder 1.0
  */
 
 ?>
-<!-- wp:group {"metadata":{"name":"Wrapper | Padding","patternName":"ng1-base/wrapper-padding-56-72"},"align":"full","className":"section-styles is-style-default wrapper-padding","style":{"spacing":{"padding":{"top":"var:preset|spacing|56-72","bottom":"var:preset|spacing|56-72"}}},"layout":{"type":"constrained"}} -->
+<!-- wp:group {"metadata":{"name":"Wrapper | Padding","patternName":"up-coder/wrapper-padding-56-72"},"align":"full","className":"section-styles is-style-default wrapper-padding","style":{"spacing":{"padding":{"top":"var:preset|spacing|56-72","bottom":"var:preset|spacing|56-72"}}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignfull section-styles is-style-default wrapper-padding" style="padding-top:var(--wp--preset--spacing--56-72);padding-bottom:var(--wp--preset--spacing--56-72)">
-	<!-- wp:pattern {"slug":"ng1-base/content-{$slug_escaped}"} /-->
+	<!-- wp:pattern {"slug":"up-coder/content-{$slug_escaped}"} /-->
 </div>
 <!-- /wp:group -->
 PHP;
@@ -166,7 +166,7 @@ function updp_generate_content_file( $slug, $title ) {
 <?php
 /**
  * Title: Content {$title_escaped}
- * Slug: ng1-base/content-{$slug_escaped}
+ * Slug: up-coder/content-{$slug_escaped}
  * Block Types: core/group
  * Inserter: true
  * Synced: false

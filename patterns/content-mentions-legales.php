@@ -1,13 +1,13 @@
 <?php
 /**
  * Title: Contenu Mentions légales
- * Slug: ng1-base/content-mentions-legales
+ * Slug: up-coder/content-mentions-legales
  * Block Types: core/group
  * Inserter: false
  * Synced: false
  */
 ?>
-<!-- wp:group {"metadata":{"name":"Contenu | Mentions légales","patternName":"ng1-base/contenu-mentions-legales"},"align":"full","className":"contenu-mentions-legales","layout":{"type":"constrained"}} -->
+<!-- wp:group {"metadata":{"name":"Contenu | Mentions légales","patternName":"up-coder/contenu-mentions-legales"},"align":"full","className":"contenu-mentions-legales","layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignfull contenu-mentions-legales"><!-- wp:post-title {"level":1} /-->
 <!-- wp:group {"style":{"spacing":{"padding":{"right":"var:preset|spacing|2","left":"var:preset|spacing|2"}}},"layout":{"type":"constrained","contentSize":"960px"}} -->
 <div class="wp-block-group" style="padding-right:var(--wp--preset--spacing--2);padding-left:var(--wp--preset--spacing--2)">

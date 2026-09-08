@@ -1,13 +1,13 @@
 <?php
 /**
  * Title: Contenu Politique confidentialité
- * Slug: ng1-base/content-politique-confidentialite
+ * Slug: up-coder/content-politique-confidentialite
  * Block Types: core/group
  * Inserter: true
  * Synced: false
  */
 ?>
-<!-- wp:group {"align":"full","layout":{"type":"constrained"},"metadata":{"patternName":"ng1-base/contenu-politique-confidentialite"}} -->
+<!-- wp:group {"align":"full","layout":{"type":"constrained"},"metadata":{"patternName":"up-coder/contenu-politique-confidentialite"}} -->
 <div class="wp-block-group alignfull"><!-- wp:post-title {"level":1} /-->
  <!-- wp:group {"style":{"spacing":{"padding":{"right":"var:preset|spacing|2","left":"var:preset|spacing|2"}}},"layout":{"type":"constrained","contentSize":"960px"}} -->
 <div class="wp-block-group" style="padding-right:var(--wp--preset--spacing--2);padding-left:var(--wp--preset--spacing--2)">

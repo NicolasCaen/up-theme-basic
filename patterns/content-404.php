@@ -1,16 +1,16 @@
 <?php
 /**
  * Title: Content 404
- * Slug: ng1-base/content-404
+ * Slug: up-coder/content-404
  * Block Types: core/group
  * Inserter: true
  * Synced: false
  */
 ?>
-<!-- wp:group {"metadata":{"name":"Content 404","patternName":"ng1-base/content-404"},"align":"full","className":"content-404 is-style-default","style":{"css":"\nmargin:0 auto;"},"layout":{"type":"constrained"}} -->
+<!-- wp:group {"metadata":{"name":"Content 404","patternName":"up-coder/content-404"},"align":"full","className":"content-404 is-style-default","style":{"css":"\nmargin:0 auto;"},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignfull content-404 is-style-default has-custom-css"><!-- wp:group {"tagName":"main","className":"grid-404","style":{"css":"max-width:600px; margin:0 auto;"},"layout":{"type":"grid","minimumColumnWidth":null,"columnCount":1}} -->
 <main class="wp-block-group grid-404 has-custom-css"><!-- wp:group {"layout":{"type":"constrained"}} -->
-<div class="wp-block-group"><!-- wp:spacer {"metadata":{"name":"Espacement 2.5 | 40px","categories":["layout"],"patternName":"ng1-base/spacer-5"},"className":"is-style-spacer-5","style":{"layout":[]}} -->
+<div class="wp-block-group"><!-- wp:spacer {"metadata":{"name":"Espacement 2.5 | 40px","categories":["layout"],"patternName":"up-coder/spacer-5"},"className":"is-style-spacer-5","style":{"layout":[]}} -->
 <div style="height:100px" aria-hidden="true" class="wp-block-spacer is-style-spacer-5"></div>
 <!-- /wp:spacer -->
 

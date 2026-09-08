@@ -6,7 +6,7 @@
  * Ajouter ici tout nouveau fichier admin (ne pas inclure directement
  * dans functions.php).
  *
- * @package up-theme-basic
+ * @package up-coder
  */
 
 if ( ! defined( 'ABSPATH' ) ) {

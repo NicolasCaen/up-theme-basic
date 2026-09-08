@@ -1,14 +1,14 @@
 <?php
 /**
  * Title: Header
- * Slug: ng1-base/header
+ * Slug: up-coder/header
  * Categories: header
  * Block Types: core/template-part/header
  * Description: Site header with site title and navigation.
  *
  * @package WordPress
- * @subpackage ng1-base
- * @since ng1-base 1.0
+ * @subpackage up-coder
+ * @since up-coder 1.0
  */
 
 ?>

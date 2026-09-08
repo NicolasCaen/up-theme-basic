@@ -1,4 +1,4 @@
-# Up Thème Basic
+# Up Coder
 
 ## Description
 
@@ -19,14 +19,14 @@ Thème WordPress full site editing (FSE) basé sur l'architecture `theme.json`. 
 
 ## Installation
 
-1. Copier le dossier `up-theme-basic` dans `wp-content/themes/`.
+1. Copier le dossier `up-coder` dans `wp-content/themes/`.
 2. Activer le thème dans **Apparence → Thèmes** de l'administration WordPress.
 3. Compiler les styles SCSS si nécessaire (`sass assets/scss/style.scss style.css`).
 
 ## Structure
 
 ```
-up-theme-basic/
+up-coder/
 ├── assets/
 │   ├── scss/            # Sources SCSS
 │   │   ├── style.scss   # Feuille principale
